@@ -1,0 +1,34 @@
+.cabecera 
+{width: 100%;
+height:10px;
+border-bottom: 4px solid; display:inline-block
+}
+.cuerpo
+{width: 100%;
+    height:150px;display:inline-block}
+.menu
+{height: 100%;padding-left: 100px; float: left}
+.menu div 
+{display:inline-block;
+height: 100%;
+padding-right: 30px;
+padding padding-left: 30px;
+line height: 110px;
+}
+.menu div :hover {background-color: honeydew }
+.pie  
+{width: 100%;
+height:300px;
+margin: 0 auto;
+background-color:rgb(17, 2, 51)}
+
+.logo {margin-left: 20px;
+    width: auto;
+    height: 100%;
+    /*blackground-color: rosybrown:*/
+    float: left
+}
+.img-logo{
+width: auto;
+height:10%}
+    
