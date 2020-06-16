@@ -1,0 +1,30 @@
+.header{
+        background-color: papayawhip;
+        width: 100%;
+        height: 150px;
+}
+#cuerpo{
+        background-color: rosybrown;
+        width: 100%;
+        height: 700px;
+}    
+.pie{
+    background-color: plum;
+    width: 100%;
+    height: 150px;
+}
+header.logo{
+            background-color: pink;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-left: 25px;
+            text-align: center;
+}
+.nombre{
+        width: 120px;
+        height: 75px;
+        background-color: white;
+        float: right;
+        text-align: center;
+}

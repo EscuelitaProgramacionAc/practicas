@@ -1,0 +1,68 @@
+body, header, footer, div, h1, h2, h3, h4, h5{
+    margin: 0 auto;
+}
+.divcabeza{
+    background-color: plum;
+    width: 100%;
+    height: 40px;
+}
+.header{
+    width: 100%;
+    height: 110px;
+    /*background-color: green;*/
+    border-bottom: 2px solid #cacacac2;
+}
+#cuerpo{
+    background-color: rosybrown;
+    width: 100%;
+    height: 700px;
+}    
+.pie{
+    background-color: plum;
+    width: 100%;
+    height: 150px;
+}
+header.img-log{
+    background-color: pink;
+    width: auto;
+    height: 100%;
+    float: left;
+    margin-left: 25px;
+    text-align: center;
+}
+.nombre{
+    width: 120px;
+    height: 150px;
+    background-color: white;
+    float: right;
+    text-align: center;
+}
+.menu{
+    height: 100%;
+    padding-left: 100px; 
+    float: left;
+}
+.menu div{
+    /*El valor por defecto es block*/
+    display: inline-block;
+    height: 100%; 
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 110px;
+}
+.menu div:hover{
+    background-color: #e6e6e6;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu span{
+    font-size: 18px;
+    color: black;
+    /*Transformo texto a mayuscula*/
+    text-transform: uppercase;
+    font-family: "Open Sans";
+}
+.selected{
+    font-weight: bold;
+}
