@@ -1,0 +1,200 @@
+/* Este estilo lo aplicamos para no tener espacios entre los elementos */
+body, header, footer, div, h1, h2, h3, h4, h5{
+    margin: 0 auto;
+}
+.cabecera{
+    width: 100%;
+    height: 110px;
+    /*background-color: green;*/
+    border-bottom: 2px solid #cacacac2;
+}
+.cuerpo{
+    width: 100%;
+    /*height: 400px;*/                                      /*Modificado*/
+    background-color: #f5f5f5;                             /*Modificado*/
+    padding-bottom: 20px;                                   /*Modificado*/
+}
+.pie{
+    width: 100%;
+    height: 75px;
+    /*background-color: red;*/                              /*Modificado*/
+    border-top: 2px solid #cacacac2;
+}
+
+.logo{
+    margin-left: 50px;
+    width: auto;
+    height: 100%;
+    /*background-color: rosybrown;*/
+    float: left;
+}
+.img-logo{
+    width: auto;
+    height: 100%;
+}
+.menu{
+    height: 100%;
+    padding-left: 100px;
+    float: left;
+}
+.menu div{
+    /*El valor por defecto es block*/
+    display: inline-block;
+    height: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 110px;
+}
+.menu div:hover{
+    background-color: #e6e6e6;
+}
+
+.menu a{
+    text-decoration: none;
+}
+.menu span{
+    font-size: 18px;
+    color: black;
+    /*Transformo texto a mayuscula*/
+    text-transform: uppercase;
+    font-family: "Open Sans";
+}
+.selected{
+    font-weight: bold;
+}
+
+/* Estilos del cuerpo de la pagina */
+.carrusel{
+    /*width: 100%;
+    height: 450px;
+    background-image: url("../img/carousel_bootstrap.png");
+    background-size: cover;*/
+}
+.carousel .carousel-item {
+    height: 450px;
+  }
+  
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+}
+
+/* Productos */
+.productos{
+    width: 80%;
+    margin-top: 50px;
+    font-size: 0;
+    text-align: center;
+}
+.titulo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+}
+
+.prod{
+    width: 25%;
+    margin: 30px 2%;
+    display: inline-block;
+    border: 2px solid #d7d7d7;
+    /*background-color: blue;*/                             /*Eliminar al final*/
+}
+.prod-img{
+    background-color: green;
+    height: 250px;
+}
+.prod-descripcion {
+    background-color: #c2fbd5a3;
+    height: 40px;
+}
+.prod-descripcion h2{
+    border-top: 2px solid #d7d7d7;
+    padding-top: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+}
+.prod-precio{
+    border-top: 2px solid #61a277;
+    background-color: #c2fbd5a3;
+    height: 30px;
+}
+.prod-precio span{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.img-uno{
+    background-image: url("../img/img-uno.jfif");
+    background-size: cover;
+}
+.img-dos{
+    background-image: url("../img/img-dos.jpg");
+    background-size: cover;
+}
+.img-tres{
+    background-image: url("../img/img-tres.png");
+    background-size: cover;
+}
+
+
+/* Preguntas frecuentes */
+.pfrecuentes{
+    width: 80%;
+    margin-top: 20px;
+    font-size: 0;
+    text-align: center;
+}
+.pfrecuente-contenedor{
+    text-align: left;
+    margin-top: 30px;
+}
+.pfrecuente-pregunta h2{
+    font-size: 19px;
+    text-align: left;
+}
+.pfrecuente-respuesta{
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Contacto */
+.contenedor-info-contacto{
+    /*background-color: blue;*/
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+.logo-footer{
+    margin-left: 10px;
+    margin-right: 25px;
+    width: auto;
+    height: 100%;
+    /*background-color: rosybrown;*/
+    float: left;
+}
+.info-contacto{
+    padding-top: 10px;
+}
+.redes{
+    /*background-color: chartreuse;*/
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes img{
+    padding-top: 15px;
+    width: 50px;
+    float: right;
+}
