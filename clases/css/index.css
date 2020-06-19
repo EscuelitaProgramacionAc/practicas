@@ -1,0 +1,109 @@
+.cabecera {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  border-bottom: 2px solid white;
+  margin: auto;
+}
+
+.logo {
+  margin-left: 30%;
+}
+
+.menu {
+  float: left;
+  background-color: black;
+  width: 100%;
+  white-space: 10px;
+}
+
+.menu div {
+  display: inline-block;
+  height: 100%;
+  height: 100%;
+  padding-right: 103px;
+  padding-left: 142px;
+  line-height: 25px;
+}
+
+.menu div:hover {
+  background-color: #d674b1;
+}
+
+.menu span {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuerpo {
+  width: 100%;
+  height: 830px;
+  background-color: #000000;
+  padding-top: 25px;
+}
+
+.pie {
+  width: 100%;
+  height: 20%;
+  border-top: 2px solid white;
+  background-color: dimgrey;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.carrusel {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+.carousel .carousel-item {
+  width: 1200px;
+  padding-left: 143px;
+}
+
+.contenedor-info-contacto {
+  width: 50%;
+  height: 110%;
+  float: left;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.logo-footer {
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 25%;
+  height: 45%;
+  padding-top: 15px;
+  float: left;
+}
+
+.info-contacto {
+  padding-top: 15px;
+}
+
+.redes {
+  width: 40%;
+  height: 10%;
+  float: right;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+.redes img {
+  padding-top: 15px;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
