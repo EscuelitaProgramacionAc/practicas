@@ -7,7 +7,8 @@
 }
 
 .logo {
-  margin-left: 30%;
+  /*margin-left: 30%;*/
+  text-align: center;
 }
 
 .menu {
@@ -15,15 +16,18 @@
   background-color: black;
   width: 100%;
   white-space: 10px;
+  font-size: 0;
 }
 
 .menu div {
   display: inline-block;
   height: 100%;
   height: 100%;
-  padding-right: 103px;
+  width: 25%;
+  text-align: center;
+  /*padding-right: 103px;
   padding-left: 142px;
-  line-height: 25px;
+  line-height: 25px;*/
 }
 
 .menu div:hover {
@@ -42,13 +46,6 @@
   height: 830px;
   background-color: #000000;
   padding-top: 25px;
-}
-
-.pie {
-  width: 100%;
-  height: 20%;
-  border-top: 2px solid white;
-  background-color: dimgrey;
 }
 
 .menu a {
@@ -70,9 +67,16 @@
   padding-left: 143px;
 }
 
+.pie {
+  width: 100%;
+  height: 120px;
+  border-top: 2px solid #a9a9a9;
+  background-color: dimgrey;
+}
+
 .contenedor-info-contacto {
   width: 50%;
-  height: 110%;
+  height: 100%;
   float: left;
   font-family: "Open Sans";
   font-weight: bold;
@@ -81,20 +85,22 @@
 .logo-footer {
   margin-left: 15px;
   margin-right: 10px;
-  width: 25%;
-  height: 45%;
-  padding-top: 15px;
+  /*width: 25%;*/
+  height: 100%;
+  padding-top: 20px;
   float: left;
 }
 
 .info-contacto {
-  padding-top: 15px;
+  padding-top: 20px;
+  font-size: 18px;
 }
 
 .redes {
-  width: 40%;
-  height: 10%;
+  width: 50%;
+  height: 100%;
   float: right;
+  padding-right: 15px;
 }
 
 .redes a {
@@ -102,8 +108,8 @@
 }
 
 .redes img {
-  padding-top: 15px;
-  width: 100px;
-  height: 100px;
+  margin-top: 35px;
+  margin-right: 2px;
+  height: 50px;
   float: right;
 }
