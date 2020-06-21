@@ -1,3 +1,3 @@
 # practicas
 Repositorio para subir nuestro trabajo
-cualquier cosa
+cualquier cosa cara de nalga
