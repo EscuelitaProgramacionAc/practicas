@@ -1,0 +1,27 @@
+.rojo{
+    background-color: #ff0000;
+}
+.naranja{
+    background-color: #ffc000;
+}
+.amarillo{
+    background-color: #ffff00;
+}
+.verde{
+    background-color: #00b050;
+}
+div{
+    border: 1px solid black;
+}
+#cabecera{
+    height: 100px;
+}
+#cuerpo{
+    /*height: 484px;*/
+}
+#pie{
+    height: 75px;
+}
+#carrusel{
+    height: 200px;
+}

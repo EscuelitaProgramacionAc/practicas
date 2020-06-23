@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <style>
+            .rojo{
+                background-color: #ff0000;
+            }
+            .naranja{
+                background-color: #ffc000;
+            }
+            .amarillo{
+                background-color: #ffff00;
+            }
+            .verde{
+                background-color: #00b050;
+            }
+            div{
+                border: 1px solid black;
+            }
+            #cabecera{
+                height: 100px;
+            }
+            #cuerpo{
+                /*height: 484px;*/
+            }
+            #pie{
+                height: 75px;
+            }
+            #carrusel{
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Ejemplo col-12 col-sm-10, col-md-6, col-lg-4-->
+
+        <!-- col     sm     md      lg     xl -->
+        <!-- 0px    540px  720px   960px  1140px -->
+        <!-- _______>______>_______>______>______ -->
+        <div class="container-fluid">
+            <div class="row">
+                <div id="cabecera" class="col-12 rojo">
+                    <span>Cabecera</span>
+                </div>
+            </div>
+
+            <div class="row amarillo">
+                <div id="cuerpo" class="col-12">
+
+                    <div class="row verde">
+                        <div id="carrusel" class="col-12">
+                            Carrusel de imagenes
+                        </div>
+                    </div>
+
+                    <div class="row naranja">
+                        <div class="col-12">Nuestros Productos</div>
+                    </div>
+                    <div class="row naranja">
+                        <div class="col-12 col-md-6 col-lg-4">Producto 1</div>
+                        <div class="col-12 col-md-6 col-lg-4">Producto 2</div>
+                        <div class="col-12 col-md-6 col-lg-4">Producto 3</div>
+                        <div class="col-12 col-md-6 col-lg-4">Producto 4</div>
+                        <div class="col-12 col-md-6 col-lg-4">Producto 5</div>
+                        <div class="col-12 col-md-6 col-lg-4">Producto 6</div>
+                    </div>
+
+                    <div class="row rojo">
+                        <div class="col-12">Preguntas Frecuentes</div>
+                    </div>
+                    <div class="row rojo">
+                        <div class="col-12">pregunta 1</div>
+                        <div class="col-12">pregunta 2</div>
+                        <div class="col-12">pregunta 3</div>
+                        <div class="col-12">pregunta 4</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10" style="background-color: blue;">
+                            <span>Ejemplo de offset</span>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-2">
+                            <span>Ocupo 6 de las 12 columnas dentro de las 10 anteriores</span>
+                        </div>
+                        <div class="col-2">
+                            <span>Ocupo 6 de las 12 columnas dentro de las 10 anteriores</span>
+                        </div>
+                        <div class="col-2">
+                            <span>Ocupo 6 de las 12 columnas dentro de las 10 anteriores</span>
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="pie" class="col-12 verde">
+                    <span>Pie de pagina</span>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
