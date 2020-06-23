@@ -18,10 +18,27 @@
             }
             .logo{
             
-                width: 75px;
-                height: 75px;
+                width: 150px;
+                height: 150px;
                 float: left;
                 margin-left: 25px;
                 text-align: center;
             }
-   
+
+        .img-logo{
+                height: 100%;
+                width: auto;
+                }
+        
+        .idtitulo{
+            background-color: red;            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 75px;
+            margin-left: 75px;
+            float: center;
+                    }
+
+        
+
+
+

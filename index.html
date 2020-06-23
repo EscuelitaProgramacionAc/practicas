@@ -1,104 +1,169 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta name-"viewport" content="whidth-device-width, initial-scale-1.0">
         <meta charset-"UTF-8">
         <title>Elisama Deco</title>
         <script>alert("Recuerda, Dios nos oye") </script>
         <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    </head>
-    <body>
-        
-        <div class="containter">
-            <div class="row">
-                <div id="cabecera" class="col-12 amarillo"></div>
-                   
+
+            </head>
+            <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style>
+        .rojo{
+            background-color: #ff0000;
+        }
+        .naranja{
+            background-color: #ffc000;
+        }
+        .amarillo{
+            background-color: #ffff00;
+        }
+        .verde{
+            background-color: white;
+        }
+        div{
+            border: 1px solid black;
+        }
+        #cabecera{
+            height: 150px;
+        }
+        #cuerpo{
+            height: 700px;
+        }
+        #pie{
+            height: 75px;
+        }           
+        #carrusel{
+            height: 700px;
+        }
+    </style>
+
+            <!-- col     sm      md      lg      xl  -->
+            <!-- 0px    540px	720px	960px	1140px-->
+            <!-- _______>_______>_______>_______>_____ -->
+                <div class="container">
+                    <div class="row">
+                        <div id="cabecera" class="col-12 amarillo">
+                        <div class="logo">
+                            <img class="img-logo" src="img/ELISAMA LOGO TRANSP.png">
+                        </div>
+            
+                         <h1><div class="titulo"></div></h1>  
+                             <h1 id="idtitulo">Control Interno Ingreso, Egreso y Stock</h1>    
+                        </div>
+                    </div>
                 </div>
             
-            </div>
-
-        <div class="cabecera">
-            <div class="logo">
-                <img class="img-logo" src="img/ELISAMA LOGO TRANSP.png">
-            </div>
-
-             <h1><div class="titulo"></div></h1>  
-                 <h1 id="idtitulo">Control Interno Ingreso, Egreso y Stock</h1>    
-            </div>
-
-        
-
-            </div>
-                
-            <div class="span" soy el texto del span></div>
-
-            <div class="cuerpo">
-            <div class="table">
-
-                      <tbody>
-                          <table border="1">
+            
+                <div id="cuerpo" class="col-12">
+                    
+                    <div class="row white">
+                        <div class="col-12"><span></span></div>
+                        <div class="col-12"><span> Control Diario Caja </span></div>
+                        <div id="table" Control Diario class="col-12">   
+                            <tbody>
+                            <table border="1">
                               <thead>
-                            <tr>
+                                <tr>
                                 <th>Fecha</th><th>Detalle</th><th>Ingreso</th><th>Egreso</th><th>Saldo</th>
-                            </tr>
+                                </tr>
                                 <td>01/06/20</td><th>Efectivo</th><td>0000</td><td>0000</td><td>5000</td>
-                            </tr>
+                                </tr>
                         
                                 <td>03/06/20</td><th>Venta</th><td>200</td><td>000</td><td>5200</td>    
                             </tr>
-                        </table>
                         </tbody>
-                 </thead>
-                 <div class="row">
-                    <div class="row">
-                        <div class="col-4 amarillo"></div>
-                        <div class="col-4 celeste"></div>
-                        <div class="col-4 rosa"></div>
+                        </table>
+                        </div>
+
+                    <div class="row white">
+                        <div class="col-12"><span></span></div>
+                        <div class="col-12"> <h2>Buscar Producto</h2></div>
+                          <input type="Generar orden de compra"></br>
+                          <input type="button" value="Enviar!"></br>
                     </div>
-                
-                </div>
+                    <div class="input-group col-12">
+                             <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="Buscar Producto aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                            <div class="Buscar Producto">
+                            <a class="Buscar Producto" href="#">Producto</a>
+                           
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="Buscar Producto href="#"></a>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                      </div>
 
-             <table border="2">
-                <thead>    
-                    <tr>
-                        ><th>Producto</th><th>Detalle</th><th>Imagen</th><th>Stock</th><th>Stock Futuro</th>
-                    </tr>
-                </thead>
-
-                <h2>Buscar Producto</h2>
-                <input type="Generar orden de compra"></br>
-               <input type="button" value="Enviar!"></br>
-
-
-                <h1 class-"Productos">
+                         <table border="2">
+                            <thead>    
+                                <tr>
+                                ><th>Producto</th><th>Detalle</th><th>Imagen</th><th>Stock</th><th>Stock Futuro</th>
+                                </tr>
+                            </thead>
+                        <h1 class-"Productos">
     
-                <tbody>
-                    <tr>
-                        <td>Cuadro Linea God 001</td><th>Medida 25x25cm, Fil 4:13, Material Lona </th><th> <img src="img/gozo.jpg"  wigth="50" height="50"></th><td>1</td><td>0</td>
-                    </tr>
-                         <td>Cuadro Linea GOd 002</td><th>Medida 30x45cm, Isaias 41, Material Lona</th><th> <img src="img/isaias 41.jpg" wigth="50" height="50"></th><td>5</td><td>2</td>
-                    </tr> 
-                    <td>Cuadro Linea God 003</td><th>Medida 25x25cm, Is Love, Material Lona</th><th> <img src="img/is love.jpg" wigth="50" height="50"></th><td>3</td><td>4</td>
-                </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Cuadro Linea God 001</td><th>Medida 25x25cm, Fil 4:13, Material Lona </th><th> <img src="img/gozo.jpg"  wigth="50" height="50"></th><td>1</td><td>0</td>
+                                </tr>
+                                     <td>Cuadro Linea God 002</td><th>Medida 30x45cm, Isaias 41, Material Lona</th><th> <img src="img/isaias 41.jpg" wigth="50" height="50"></th><td>5</td><td>2</td>
+                                </tr> 
+                                <td>Cuadro Linea God 003</td><th>Medida 25x25cm, Is Love, Material Lona</th><th> <img src="img/is love.jpg" wigth="50" height="50"></th><td>3</td><td>4</td>
+                                </tr>
+            
+                            </tbody>
+                        </table>
+                        </div>
+            
 
-                </tbody>
-            </table>
-        </div>
+                    <div class="row naranja">
+                        <div class="col-12"> Generar Orden de Compra</div>
+                        <div class="input-group col-12">
+                            <div class="input-group-prepend">
+                           <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="Buscar Producto aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                           <div class="Buscar Producto">
+                           <a class="Buscar Producto" href="#">Producto</a>
+                          
+                           <div role="separator" class="dropdown-divider"></div>
+                           <a class="Buscar Producto href="#"></a>
+                         </div>
+                       </div>
+                       <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                     </div>
+                        
+                    <div class="row rojo">
+                        <div class="col-12">Anotaciones Importantes</div>
+                    </div>
+                   
 
-        <div class="pie">
-            <td>Generar orden de compra</td>
-        <input type="button" value="Enviar!"></br>
-      
-        </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div id="pie" class="col-12 verde">
+                    <span>Elisama Tienda Online</span>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-auto">
+                            <img class="img-logo" src="img/logo facebook.jpg">
+                          </div>
+                          <div class="col-auto">
+                            <img class="img-logo" src="img/logo instagram.jpg">
+                          </div>
+                          <div class="col-auto">
+                            <img class="img-logo" src="img/descarga.png">
+                          </div>
+                        </div>
+                      </div>
+    
     </body>
-    <html>
+</html>
 
-
-
-    </html>   
-       
-
-
-<html>
-<head>
