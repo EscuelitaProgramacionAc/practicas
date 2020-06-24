@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .rojo {
+        background-color: #ff0000;
+      }
+      .naranja {
+        background-color: #ffc000;
+      }
+      .amarillo {
+        background-color: #ffff00;
+      }
+      .verde {
+        background-color: #00b050;
+      }
+      .rosa{
+        background-color: rosybrown;
+      }
+      div {
+        border: 1px solid black;
+      }
+      #cabecera {
+        height: 100px;
+      }
+      #cuerpo {
+        /*height: 484px;*/
+      }
+      #pie {
+        height: 75px;
+      }
+      #carrusel {
+        height: 200px;
+      }
+      #iconos {
+        margin-right: 25px;
+        float: right;
+        padding-inline-end: ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="cabecera" class="col-10 rojo">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sede</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inscripción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Expositores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+         <div class="col-2 rosa justify-content-end">
+            <span>redes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row amarillo">
+        <div id="cuerpo" class="col-12">
+          <div class="row verde">
+            <div id="carrusel" class="col-12">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./" class="d-block w-100" alt="first slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./" class="d-block w-100" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./" class="d-block w-100" alt="Third slide" />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row naranja">
+            <div class="col-12">Bienvenidos</div>
+          </div>
+          <div class="row naranja">
+            <p>Este año elegimos este tema impulsado por la DAN para transmitir que la importancia de la salud de nuestros niños está por encima de cualquier otra premisa, y con el trabajo en común de todos como el gran objetivo que nos une.
+              Queremos darles la bienvenida a la Ciudad de Buenos Aires, donde los esperamos con la ilusión de que este Congreso cumpla con las expectativas que esperan de él, tras el esfuerzo que siempre supone para todos el intenso trabajo y la ausencia del hogar durante unos días.</p>
+              <h1>Maria Laura Sanchez - Presidente del Congreso</h1>
+          </div>
+
+          <div class="row rojo">
+            <div class="col-12">Sede</div>
+          </div>
+          <div class="row rojo">
+            <div class="col-4">imagen de sede</div>
+            <div class="col-2">descripción / ubicación</div>
+            <div class="col-12">mapa de google</div>
+          </div>
+
+          <div class="row">
+            <div class="offset-md-1 col-md-10" style="background-color: blue;">
+              <span>Expositores</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="offset-md-1 col-md-10"
+              style="background-color: aquamarine;"
+            >
+              <div class="row">
+                <div class="col-md-4">
+                  <span>imagen de expositor y pequeña descripción</span>
+                </div>
+                <div class="col-md-4">
+                  <span>imagen de expositor y pequeña descripción</span>
+                </div>
+                <div class="col-md-4">
+                  <span
+                    >imagen de expositor y pequeña descripción</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"> Inscripción </div>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Nombre </label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Apellido</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Correo Electrónico</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">País de Origen</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">Ocupación</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Seleccionar</option>
+                    <option>Estudiante</option>
+                    <option>Profesional</option>
+                    <option>Miembro del Comité</option>
+                  </select>
+                </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="pie" class="col-12 verde">
+          <div class="col-md-6">
+            <span> Tel: +54 11 6589 4598 </span>
+            <br/>
+            <span> Email:MICE.Events@gmail.com </span>
+            <br/>
+            <span> Dirección: El Salvador 4498, CABA </span>
+          </div>
+          <div class="col-md-6">
+            <img src="./img/face.png" alt="10px" width="20px" />
+            <img src="./img/whatsapplogo.png" alt="10px" width="20px" />
+            <img src="./img/instalogo.png" alt="10px" width="20px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
