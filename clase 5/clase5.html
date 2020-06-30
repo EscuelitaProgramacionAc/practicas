@@ -11,21 +11,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    
     <style>
       .rojo {
         background-color: #ff0000;
@@ -43,10 +29,11 @@
         background-color: rosybrown;
       }
       div {
-        border: 1px solid black;
+        /*border: 1px solid black;*/
       }
       #cabecera {
         height: 100px;
+        border-bottom: 1px solid black;
       }
       #cuerpo {
         /*height: 484px;*/
@@ -55,19 +42,30 @@
         height: 75px;
       }
       #carrusel {
-        height: 200px;
+        /*height: 200px;*/
       }
       #iconos {
         margin-right: 25px;
         float: right;
         padding-inline-end: ;
       }
+      .carousel .carousel-item {
+        height: 450px;
+      }
+        
+      .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 450px;
+        background-size: cover;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div id="cabecera" class="col-10 rojo">
+      <div id="cabecera" class="row align-items-center">
+        <div class="col-10">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"></a>
             <button
@@ -111,153 +109,118 @@
               </ul>
             </div>
           </nav>
-         <div class="col-2 rosa justify-content-end">
-            <span>redes</span>
-          </div>
+        </div>
+        <div class="col-2 rosa justify-content-end">
+          <span>redes</span>
         </div>
       </div>
 
+      
       <div class="row amarillo">
-        <div id="cuerpo" class="col-12">
-          <div class="row verde">
-            <div id="carrusel" class="col-12">
-              <div
-                id="carouselExampleIndicators"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="1"
-                  ></li>
-                  <li
-                    data-target="#carouselExampleIndicators"
-                    data-slide-to="2"
-                  ></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./" class="d-block w-100" alt="first slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./" class="d-block w-100" alt="Second slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./" class="d-block w-100" alt="Third slide" />
-                  </div>
-                </div>
-                <a
-                  class="carousel-control-prev"
-                  href="#carouselExampleIndicators"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carouselExampleIndicators"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
+        <div id="carrusel" class="col-12">
+          
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carrusel-uno.jpg" class="d-block w-100" alt="img">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrusel-dos.jpg" class="d-block w-100" alt="img">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrusel-tres.jfif" class="d-block w-100" alt="img">
               </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
 
-          <div class="row naranja">
-            <div class="col-12">Bienvenidos</div>
-          </div>
-          <div class="row naranja">
-            <p>Este año elegimos este tema impulsado por la DAN para transmitir que la importancia de la salud de nuestros niños está por encima de cualquier otra premisa, y con el trabajo en común de todos como el gran objetivo que nos une.
-              Queremos darles la bienvenida a la Ciudad de Buenos Aires, donde los esperamos con la ilusión de que este Congreso cumpla con las expectativas que esperan de él, tras el esfuerzo que siempre supone para todos el intenso trabajo y la ausencia del hogar durante unos días.</p>
-              <h1>Maria Laura Sanchez - Presidente del Congreso</h1>
-          </div>
+        </div>
+      </div>
 
-          <div class="row rojo">
-            <div class="col-12">Sede</div>
-          </div>
-          <div class="row rojo">
-            <div class="col-4">imagen de sede</div>
-            <div class="col-2">descripción / ubicación</div>
-            <div class="col-12">mapa de google</div>
-          </div>
+      <div class="row naranja">
+        <div class="col-12">Bienvenidos</div>
+      </div>
+      <div class="row naranja">
+        <p>Este año elegimos este tema impulsado por la DAN para transmitir que la importancia de la salud de nuestros niños está por encima de cualquier otra premisa, y con el trabajo en común de todos como el gran objetivo que nos une.
+          Queremos darles la bienvenida a la Ciudad de Buenos Aires, donde los esperamos con la ilusión de que este Congreso cumpla con las expectativas que esperan de él, tras el esfuerzo que siempre supone para todos el intenso trabajo y la ausencia del hogar durante unos días.</p>
+          <h1>Maria Laura Sanchez - Presidente del Congreso</h1>
+      </div>
 
+      <div class="row rojo">
+        <div class="col-12">Sede</div>
+      </div>
+      <div class="row rojo">
+        <div class="col-4">imagen de sede</div>
+        <div class="col-2">descripción / ubicación</div>
+        <div class="col-12">mapa de google</div>
+      </div>
+
+      <div class="row">
+        <div class="offset-md-1 col-md-10" style="background-color: blue;">
+          <span>Expositores</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="offset-md-1 col-md-10"
+          style="background-color: aquamarine;"
+        >
           <div class="row">
-            <div class="offset-md-1 col-md-10" style="background-color: blue;">
-              <span>Expositores</span>
+            <div class="col-md-4">
+              <span>imagen de expositor y pequeña descripción</span>
             </div>
-          </div>
-
-          <div class="row">
-            <div
-              class="offset-md-1 col-md-10"
-              style="background-color: aquamarine;"
-            >
-              <div class="row">
-                <div class="col-md-4">
-                  <span>imagen de expositor y pequeña descripción</span>
-                </div>
-                <div class="col-md-4">
-                  <span>imagen de expositor y pequeña descripción</span>
-                </div>
-                <div class="col-md-4">
-                  <span
-                    >imagen de expositor y pequeña descripción</span>
-                </div>
-              </div>
+            <div class="col-md-4">
+              <span>imagen de expositor y pequeña descripción</span>
+            </div>
+            <div class="col-md-4">
+              <span
+                >imagen de expositor y pequeña descripción</span>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12"> Inscripción </div>
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Nombre </label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Apellido</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12"> Inscripción </div>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Nombre </label>
+                <input type="email" class="form-control" id="inputEmail4">
               </div>
-              <div class="form-group">
-                <label for="inputAddress">Correo Electrónico</label>
-                <input type="text" class="form-control" id="inputAddress">
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Apellido</label>
+                <input type="password" class="form-control" id="inputPassword4">
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">País de Origen</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState">Ocupación</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Seleccionar</option>
-                    <option>Estudiante</option>
-                    <option>Profesional</option>
-                    <option>Miembro del Comité</option>
-                  </select>
-                </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Correo Electrónico</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">País de Origen</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Ocupación</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seleccionar</option>
+                  <option>Estudiante</option>
+                  <option>Profesional</option>
+                  <option>Miembro del Comité</option>
+                </select>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
       </div>
 
@@ -277,6 +240,23 @@
           </div>
         </div>
       </div>
+    
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
