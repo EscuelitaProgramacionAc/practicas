@@ -1,0 +1,92 @@
+body, header, footer, div, h1, h2, h3, h4, h5{
+  margin: 0 auto;
+}
+#cabecera {
+  height: 100px;
+  border-bottom: 1px solid #cacacac2;
+}
+/* Carousel */
+.carousel .carousel-item {
+  height: 450px;
+}
+  
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 450px;
+  background-size: cover;
+}
+
+/* Bienvenida */
+.congreso-descrip {
+  padding-top: 12px;
+  font-size: 15px;
+  font-family: Georgia;
+  letter-spacing: 2px;
+  text-align: center;
+  
+}
+.congre-firma{
+  color: lightcoral;
+  font-size: 15px;
+}
+
+/*Inscripción*/
+#Pre-Inscripción{
+  background-color: yellow;
+  position: static;
+}
+
+/*Sponsors*/
+#Sponsors{
+  background-color: rosybrown;
+  margin-top: 20px;
+}
+
+/*Titulos*/
+#titulo {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Georgia;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  border-top: #cacacac2 2px solid;
+  margin-top: 20px;
+}
+
+/*Sede*/
+.sede-ubi{
+font-size: 18px;
+color: black;
+font-family: Georgia;
+letter-spacing: 2px;
+text-align: justify;
+display: inline-block;
+}
+
+/*Expositores*/
+#Expositores{
+  border-top: 2px solid #d7d7d7; 
+}
+.expoinfo h1{
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+  font-family: georgia;
+  letter-spacing: 2px;
+  padding-top: 12px;
+}
+
+#pie {
+  height: 75px;
+  border-top: 2px solid #cacacac2;
+}
+
+#iconos{
+  margin-right: 25px;
+  float: right;
+  padding-inline-end:
+}
