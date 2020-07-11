@@ -1,0 +1,14 @@
+body, header, .footer, div, h1, h2, h3, h4, h5{
+    margin: 0 auto;
+}
+
+.rojo{
+    background-color: #ff0000;
+}
+.naranja{
+    background-color: #ffc000;
+}
+.amarillo{
+    background-color: #ffff00;
+}
+ 
