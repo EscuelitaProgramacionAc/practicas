@@ -24,10 +24,10 @@ var headerHTML = `
                 <a class="nav-link" href="#Sede">Sede</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Pre-Inscripción">Pre-Inscripción</a>
+                <a class="nav-link" href="#pre-inscripción">Pre-Inscripción</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Expositores">Expositores</a>
+                <a class="nav-link" href="#expositores">Expositores</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Sponsors">Sponsors</a>
