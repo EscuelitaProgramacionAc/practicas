@@ -11,7 +11,7 @@ module.exports = function(sequelize, Sequelize) {
         mensaje: Sequelize.STRING,
     };
 
-    const Form = sequelize.define('CONSULTA', consultaDefinition);
+    const Consulta = sequelize.define('CONSULTA', consultaDefinition);
     
     return Consulta;
 }
