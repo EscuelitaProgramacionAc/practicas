@@ -5,15 +5,15 @@ const Consulta = sequalize.Consulta;
 
 //Aca van los servicios
 router.post('/', async function(req, res){
-    var consulta = {
+    var consultaIn = {
         nombre: req.body.nombre,
         email: req.body.email,
         servicio: req.body.servicio,
         mensaje: req.body.mensaje,
     }
 
-    var consulta = await Consulta.create(user)
-    res.json(Consulta);
+    var consultOut = await Consulta.create(consultaIn)
+    res.json(consultOut);
 });
 
 module.exports = router;
